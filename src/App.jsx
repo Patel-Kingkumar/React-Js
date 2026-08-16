@@ -1,6 +1,7 @@
 import Header from './assets/components/Header'
 import Footer from './assets/components/Footer'
 import UseState from './assets/components/UseState'
+import ConditionRender from './assets/components/ConditionRender'
 import './App.css'
 
 function App() {
@@ -9,10 +10,11 @@ function App() {
   const city = "Surat"
   return (
     <div>
-      <Header name="King"/>
+      {/* <Header name="King"/>
       Hello My name is { name }. I am { age } years old and I live in { city }.
       <Footer />
-      <UseState />
+      <UseState /> */}
+      <ConditionRender />
     </div>
   )
 }

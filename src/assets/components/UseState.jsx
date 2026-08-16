@@ -43,7 +43,7 @@ function UseState() {
                 <p>{user.age}</p>
                 <p>{user.city}</p>
 
-                <button onClick={changeName}>
+                <button className="btn btn-primary" onClick={changeName}>
                     Change Name
                 </button>
             </div>
