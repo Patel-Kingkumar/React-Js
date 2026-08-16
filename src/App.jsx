@@ -1,5 +1,6 @@
 import Header from './assets/components/Header'
 import Footer from './assets/components/Footer'
+import UseState from './assets/components/UseState'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Header name="King"/>
       Hello My name is { name }. I am { age } years old and I live in { city }.
       <Footer />
+      <UseState />
     </div>
   )
 }
