@@ -4,7 +4,7 @@ function Footer() {
     }
 
     return (
-        <div>
+        <div className="header">
             <h1>Footer Component</h1>
 
             <button className="btn btn-primary" onClick={handleClick}>
