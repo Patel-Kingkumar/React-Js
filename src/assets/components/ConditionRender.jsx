@@ -4,6 +4,8 @@ function ConditionRender() {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+    const fruits = ["Apple", "Banana", "Mango"];
+
     function renderContent() { }
 
     // // 1. &&
@@ -34,6 +36,11 @@ function ConditionRender() {
                 <button className="btn btn-primary" onClick={() => setIsLoggedIn(!isLoggedIn)}>
                     {isLoggedIn ? "Log Out" : "Log In"}
                 </button>
+            </div>
+            <div>
+                {fruits.map((fruit) => (
+                    <button key={fruit}>{fruit}</button>
+                ))}
             </div>
         </>
 
