@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function ConditionRender() {
 
@@ -18,6 +18,10 @@ function ConditionRender() {
     // if (isLoggedIn) {
     // ...
     // }
+
+    useEffect(() => {
+        console.log("Component mounted or updated");
+    }, [isLoggedIn]);
 
     return (
         <>

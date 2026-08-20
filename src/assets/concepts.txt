@@ -1,0 +1,6 @@
+| React                             | Angular                            | Purpose                                                             |
+| --------------------------------- | ---------------------------------- | ------------------------------------------------------------------- |
+| `useEffect(() => {...}, [])`      | `ngOnInit()`                       | Run when component initializes                                      |
+| `useEffect(() => {...})`          | `ngDoCheck()` / lifecycle behavior | React after every render; Angular has different lifecycle semantics |
+| `useEffect(() => {...}, [count])` | `ngOnChanges()`                    | React when a dependency changes; Angular when an `@Input()` changes |
+| `useEffect` cleanup               | `ngOnDestroy()`                    | Cleanup before component is destroyed                               |
